@@ -1,0 +1,17 @@
+<mat-toolbar class="navbar mat-elevation-z5" color="primary">
+  <button mat-icon-button class="btn-menu example-icon" aria-label="Example icon-button with menu icon">
+   <img class="img-menu" src="assets/logo2Global.png" alt="logo" srcset="">
+ </button>
+ <span class="titulo">Tarefa Globalweb</span>
+ <button class="mat-menu" mat-button [routerLink]="['/Home']" routerLinkActive="router-link-active" >Principal</button>
+
+<button class="mat-menu" mat-button routerLink="Cadastro">Candidato</button>
+
+ <span class="example-spacer"></span>
+ <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   <mat-icon>favorite</mat-icon>
+ </button>
+ <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+  <mat-icon>share</mat-icon>
+</button>
+</mat-toolbar>

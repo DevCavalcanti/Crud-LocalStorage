@@ -1,0 +1,32 @@
+<mat-card class="card">
+  <img class="logo" width="100%" src="../../../assets/5ef151cb9caf51cb352d95fd_logo_globalweb.svg" alt="" srcset="">
+  <form>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" name="myName" id="nome" [(ngModel)]="valores.Nome"
+          placeholder="Digite o Nome">
+
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" name="myName" id="nome" [(ngModel)]="valores.MyNota"
+          placeholder="Digite a Nota">
+      </div>
+      <div class="div-id col" >
+        <input type="text" class="form-control"  name="consultar" id="consultar" [(ngModel)]="consultar"
+          placeholder="Insira o Id ">
+          Read / UpDate / Delete
+      </div>
+    </div>
+  </form>
+  <div class="botoes">
+  <button type="submit" class="btn btn-primary mb-2" (click)="adicionar()">Cadastrar</button>
+  <button type="submit" class="btn btn-warning  mb-2" (click)="alterar()">Alterar</button>
+  <button type="submit" class="btn btn-danger mb-2 " (click)="deletar()">Deletar</button>
+  <button type="button" class="btn btn-success mb-2 " (click)="buscar()">Consultar</button>
+  <button type="button" class="btn btn-info  mb-2" (click)="funcao()">Informação</button>
+</div>
+</mat-card>
+<div>{{Resultado}}
+  <span id="minhadiv"></span>
+</div>
+

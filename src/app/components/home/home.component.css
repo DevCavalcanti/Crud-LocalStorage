@@ -1,0 +1,43 @@
+.user{
+  margin-left: 10%;
+  margin-right: 10% ;
+}
+
+
+.titulo{
+  color: #fff;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.example-header-image {
+  background-image: url("/assets/Minhafoto.png");
+  background-size: cover;
+}
+
+.fundo{
+  width: 100%;
+  justify-content: center;
+}
+
+.img{
+  width: 70%;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.example-card {
+  max-width: 600px;
+  margin: 0 auto;
+  vertical-align: middle;
+  margin-top: 10%;
+
+}
+
+.image  {
+width: 100%;
+
+
+ margin: 5px;
+}
