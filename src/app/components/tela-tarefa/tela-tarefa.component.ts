@@ -67,18 +67,29 @@ deletar(){
 
 alterar(){
 
+
   this.C = this.A + this.valores.Nome;
-    this.D = this.B + this.valores.MyNota;
+  this.D = this.B + this.valores.MyNota;
 
-    
-
+      
       const nome = this.C;
       const nota = this.D;
-      localStorage.setItem('Id_' nome + ' / ' + nota);
+     
+      var NovoValor = nome + '/' + nota;
 
-    }
+
+
+
+  var index = 'Id_'+ this.consultar;
+
+    const cat = localStorage.setItem(index, NovoValor);
+
+       //localStorage.setItem()
+      //localStorage.setItem('alterar');
 
 }
+
+
 
   adicionar() {
     this.C = this.A + this.valores.Nome;
@@ -115,7 +126,7 @@ alterar(){
 
   funcao(){
 
-    alert("Para consular a lista de candidatos cadastrados, acesse o console e precione o botão ( Buscar )")
+    alert("Para consular a lista de candidatos cadastrados, acesse o console e precione o botão ( Consular )")
 
 
 var index = 'Id_'+ this.consultar;
@@ -124,6 +135,14 @@ var index = 'Id_'+ this.consultar;
     alert(cat)
 
 
+  }
+
+  limpar(){
+
+    this.valores.Nome = '';
+   this.valores.MyNota = '';
+   this.consultar = '';
+    
   }
 
 }
